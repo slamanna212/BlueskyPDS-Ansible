@@ -25,4 +25,6 @@ Ansible playbooks to manage my Bluesky PDS server, phase.social.
 - `checklist.yml` Makes sure localhost is ready to run these playbooks
 
 ## Need to Know
-Initial provisioning is not yet coded. 
+ - Initial provisioning is not yet coded. 
+ - Initial configuration is not yet handled. Need a user called ansible with passwordless sudo and a public key for authentication. 
+  
