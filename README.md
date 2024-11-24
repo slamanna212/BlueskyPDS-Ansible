@@ -7,6 +7,11 @@ Ansible playbooks to manage my Bluesky PDS server, phase.social.
 # Requirements
  - Your Bluesky PDS on DigitalOcean. You can use this with servers in other locations but you will need to make modifications to commands for your different inventory. 
 
+# Tags
+Firewalls and groups are handled via Digital Ocean tags, they are:
+
+- `bluesky` All nodes have this tag
+
 # Setup
 1. This repo requires some Galaxy Modules, install them with:
 
@@ -27,4 +32,3 @@ Ansible playbooks to manage my Bluesky PDS server, phase.social.
 ## Need to Know
  - Initial provisioning is not yet coded. 
  - Initial configuration is not yet handled. Need a user called ansible with passwordless sudo and a public key for authentication. 
-  
