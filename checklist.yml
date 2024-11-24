@@ -1,0 +1,14 @@
+#########################################################
+# Prepares local envoriment for running this repo
+#########################################################
+---
+- hosts: localhost
+  tasks:
+    - name: Add API Key to /etc/environment
+      ansible.builtin.lineinfile:
+        path: "/etc/environment"
+        line: "DO_API_TOKEN={{ DOKey }}"
+        state: "present"
+      become: true
+
+# Manual shell restart required
