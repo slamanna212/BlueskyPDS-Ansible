@@ -1,0 +1,8 @@
+---
+# Keeps ubuntu 22 up to date
+
+- name: Update and baseline Ubuntu 22
+  hosts: bluesky
+  become: true
+  roles:
+    - ubuntu22
